@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Encuesta estudio Novelingo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="progress" id="progress" hidden>
+      <div class="progress-meta">
+        <span id="phase-label">Identificación</span>
+        <span id="step-label"></span>
+      </div>
+      <div class="progress-bar" aria-hidden="true"><span id="bar"></span></div>
+    </div>
+    <main id="app"></main>
+    <p class="error" id="error" hidden></p>
+    <div class="nav" id="nav" hidden>
+      <button type="button" class="back" id="back">Atrás</button>
+      <button type="button" class="next" id="next">Continuar</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
